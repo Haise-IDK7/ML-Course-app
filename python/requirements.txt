@@ -1,0 +1,6 @@
+# Versiones con las que se probó el código del curso (noviembre de 2026, Python 3.13).
+# Instalar:  pip install -r requirements.txt
+numpy>=2.0
+matplotlib>=3.8
+scikit-learn>=1.5
+torch>=2.4

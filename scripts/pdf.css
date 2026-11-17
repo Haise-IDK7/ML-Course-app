@@ -1,0 +1,54 @@
+/* Estilos de las guías en PDF. Mismos colores y tipografías que la app (tema claro). */
+:root {
+  --paper: #ffffff; --surface: #ffffff; --sunken: #eef1f5; --ink: #1b2030; --muted: #5a6478; --rule: #cfd5df;
+  --cobalt: #2f5bea; --cobalt-soft: #e4eaff; --amber: #f0a020; --amber-ink: #9a5b00; --amber-soft: #fff1d6;
+  --ok: #1e9e6a; --ok-soft: #dff5ea; --bad: #d6455d; --bad-soft: #fde5e9; --violet: #7a4fd6;
+}
+@page { size: A4; margin: 18mm 17mm 20mm; }
+* { box-sizing: border-box; }
+body { font-family: 'Source Serif 4 Variable', Georgia, serif; font-size: 10.6pt; line-height: 1.55; color: var(--ink); margin: 0; }
+h1, h2, h3, .kicker, .meta, .toc, table, .note, .ref, figcaption { font-family: 'IBM Plex Sans', sans-serif; }
+h1 { font-size: 19pt; line-height: 1.2; margin: 0 0 10pt; }
+h2 { font-size: 13.5pt; margin: 18pt 0 6pt; break-after: avoid; }
+h3 { font-size: 11.5pt; margin: 12pt 0 4pt; break-after: avoid; }
+p, ul, ol, table, .note, .code, figure { margin: 0 0 8pt; }
+ul, ol { padding-left: 16pt; }
+li { margin: 2pt 0; }
+a { color: var(--cobalt); text-decoration: none; }
+.cover { min-height: 235mm; display: flex; flex-direction: column; justify-content: center; break-after: page; }
+.cover h1 { font-size: 30pt; margin: 6pt 0 14pt; }
+.kicker { color: var(--cobalt); font-weight: 600; font-size: 10pt; margin: 0; }
+.lead { font-size: 13pt; color: var(--muted); max-width: 135mm; }
+.meta { font-size: 9pt; color: var(--muted); margin-top: 14pt; }
+.toc { margin-top: 18pt; font-size: 10.5pt; }
+.lesson { break-before: page; }
+.lesson > h1 { border-bottom: 2pt solid var(--ink); padding-bottom: 5pt; }
+code { font-family: 'IBM Plex Mono', monospace; font-size: 0.86em; background: var(--sunken); padding: 0 2pt; border-radius: 2pt; }
+.code { background: #f4f6f9; border: 0.6pt solid var(--rule); border-radius: 4pt; font-family: 'IBM Plex Mono', monospace; font-size: 7.6pt; line-height: 1.42; }
+.code pre { margin: 0; padding: 7pt 9pt; white-space: pre-wrap; word-break: break-word; }
+.code code { background: none; padding: 0; font-size: inherit; }
+.hljs-keyword, .hljs-built_in, .hljs-literal { color: #1f47c8; }
+.hljs-string { color: #9a5b00; }
+.hljs-number { color: #147a50; }
+.hljs-comment { color: #6b7488; font-style: italic; }
+.hljs-title { color: #b02a46; }
+table { border-collapse: collapse; width: 100%; font-size: 8.8pt; break-inside: avoid; }
+th, td { border-bottom: 0.6pt solid var(--rule); padding: 3.5pt 6pt; text-align: left; vertical-align: top; }
+th { background: var(--sunken); font-weight: 600; }
+.note { font-size: 9.4pt; line-height: 1.48; border: 0.6pt solid var(--rule); border-left: 3pt solid var(--rule); border-radius: 3pt; padding: 6pt 9pt; break-inside: avoid; }
+.note > :last-child { margin-bottom: 0; }
+.note p { margin: 0 0 4pt; }
+.note-title { font-weight: 600; }
+.note.def { border-left-color: var(--cobalt); } .note.def .note-title { color: var(--cobalt); }
+.note.idea { border-left-color: var(--amber); } .note.idea .note-title { color: var(--amber-ink); }
+.note.ojo { border-left-color: var(--bad); } .note.ojo .note-title { color: var(--bad); }
+.note.ejemplo { border-left-color: var(--ok); } .note.ejemplo .note-title { color: var(--ok); }
+.note.reciente { border-left-color: var(--violet); } .note.reciente .note-title { color: var(--violet); }
+.note.resumen { border-left-color: var(--ink); background: var(--sunken); }
+figure.fig { break-inside: avoid; }
+figure.fig svg { width: 100%; height: auto; border: 0.6pt solid var(--rule); border-radius: 4pt; }
+figcaption, .ref { font-size: 8.6pt; color: var(--muted); }
+.katex { font-size: 1.02em; }
+.katex-display { margin: 6pt 0; break-inside: avoid; }
+.quiz > li { margin-bottom: 6pt; break-inside: avoid; }
+.quiz ol { margin: 2pt 0 0; }
