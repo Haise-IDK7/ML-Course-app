@@ -2,6 +2,19 @@
 
 Curso interactivo en español para entender, desde los fundamentos, el **machine learning**, las **redes neuronales**, el **deep learning**, las **redes convolucionales (CNN)** y las **redes informadas por la física (PINN)**. Es una aplicación de escritorio (Windows, Linux, macOS) que también funciona en el navegador.
 
+## Descargar
+
+| Sistema | Archivo | Qué es |
+|---|---|---|
+| **Windows** | [**Curso-ML-Instalador.exe**](https://github.com/Haise-IDK7/ML-Course-app/releases/latest/download/Curso-ML-Instalador.exe) | Instalador: crea el acceso directo en el menú Inicio |
+| **Windows** | [Curso-ML-Portable.exe](https://github.com/Haise-IDK7/ML-Course-app/releases/latest/download/Curso-ML-Portable.exe) | Portable: se ejecuta con doble clic, sin instalar |
+| Linux | [Curso-ML.AppImage](https://github.com/Haise-IDK7/ML-Course-app/releases/latest/download/Curso-ML.AppImage) | Dale permiso de ejecución y ábrelo |
+| macOS | [Curso-ML.dmg](https://github.com/Haise-IDK7/ML-Course-app/releases/latest/download/Curso-ML.dmg) | Arrastra la app a Aplicaciones |
+
+Los enlaces apuntan siempre a la última versión publicada en [Releases](https://github.com/Haise-IDK7/ML-Course-app/releases).
+
+**En Windows:** descarga el instalador, ábrelo y sigue los pasos. Como el archivo no está firmado digitalmente, Windows mostrará el aviso «Windows protegió su PC»: pulsa **Más información** y luego **Ejecutar de todas formas**. Tu progreso se guarda en tu equipo y se conserva al actualizar.
+
 ## Qué incluye
 
 - **48 lecciones en 13 módulos**, con cada término definido la primera vez que aparece, ejemplos resueltos paso a paso y un resumen al final.
@@ -31,16 +44,11 @@ Curso interactivo en español para entender, desde los fundamentos, el **machine
 
 ## Cómo usarla
 
-### Opción A: instalador para Windows (o Linux, macOS)
+### Opción A: descargar el instalador
 
-El repositorio incluye un flujo de GitHub Actions que construye los instaladores.
+Usa los enlaces de la sección [Descargar](#descargar). Es la forma recomendada: no necesitas instalar nada más.
 
-1. En GitHub, abre la pestaña **Actions**, elige **App de escritorio** y pulsa **Run workflow**.
-2. Cuando termine (unos 10 minutos), descarga el artefacto `curso-ml-windows-latest`: contiene el instalador `.exe` y una versión portable.
-
-Si publicas una etiqueta `v1.0.0`, los instaladores se adjuntan automáticamente a la versión en **Releases**.
-
-Windows mostrará un aviso de SmartScreen porque el instalador no está firmado: «Más información» y «Ejecutar de todas formas».
+Los instaladores los genera el flujo **App de escritorio** de GitHub Actions cada vez que se publica una etiqueta `vX.Y.Z`, y quedan adjuntos a esa versión en Releases.
 
 ### Opción B: ejecutarla desde el código
 
